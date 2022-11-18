@@ -77,7 +77,7 @@ const getClean = () => {
 }
 cleanDisplay.addEventListener('click', getClean)
 
-const GetCleanLast = () => {
+const GetBackspace = () => {
   if (temp) {
     if (display.textContent.length > 1) {
       display.textContent = display.textContent.slice(0, -1)
@@ -87,7 +87,7 @@ const GetCleanLast = () => {
     num = true
   }
 }
-backspace.addEventListener('click', GetCleanLast)
+backspace.addEventListener('click', GetBackspace)
 
 const getPerceint = () => {
   display.textContent = parseFloat(display.textContent.replace(',', '.')) / 100
